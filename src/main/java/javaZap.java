@@ -17,6 +17,7 @@ public class javaZap {
         } else {
             //Logger logger = LoggerFactory.getLogger(javaZap.class);
             log.error("last bu");
+            log.error("last buADD");
             log.error("last budddfffdd");
             String line;
             ClassLoader classLoader = getClass().getClassLoader();
