@@ -17,13 +17,14 @@ public class javaZap {
         } else {
             //Logger logger = LoggerFactory.getLogger(javaZap.class);
             log.error("last bu");
-            String line = null;
+            log.error("last budddfffdd");
+            String line;
             ClassLoader classLoader = getClass().getClassLoader();
             File file = new File(classLoader.getResource("file.txt").getFile());
             try (FileReader fileReader = new FileReader(file);
                  BufferedReader bufferedReader = new BufferedReader(fileReader);) {
 
-                while ((line = bufferedReader.readLine()) != null) {
+                while (( line = bufferedReader.readLine()) != null) {
                     System.out.println(line);
                 }
             } catch (FileNotFoundException ex) {
